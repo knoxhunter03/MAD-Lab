@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/
+apk/res/android"
+ xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+tools:context=".MainActivity">
+ <TextView
+ android:id="@+id/textView2"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_alignParentTop="true"
+android:layout_centerHorizontal="true"
+android:layout_marginTop="33dp"
+ android:textAlignment="center"
+android:textColor="@color/black" android:textSize="20sp"
+android:textStyle="bold"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.498"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent" />
+ <EditText
+ android:id="@+id/num1"
+android:layout_width="wrap_content"
+android:layout_height="55dp"
+android:layout_alignParentStart="true"
+android:layout_alignParentTop="true"
+android:layout_alignParentEnd="true"
+android:layout_centerHorizontal="true"
+android:layout_marginStart="20dp"
+android:layout_marginTop="105dp"
+android:layout_marginEnd="23dp" android:ems="10"
+ android:hint="Number 1"
+ android:inputType="numberDecimal"
+ android:textSize="20sp"
+ android:textStyle="bold" />
+ <EditText
+ android:id="@+id/num2"
+android:layout_width="wrap_content"
+android:layout_height="55dp"
+android:layout_alignParentStart="true"
+android:layout_alignParentTop="true"
+android:layout_alignParentEnd="true"
+android:layout_centerHorizontal="true"
+android:layout_marginStart="28dp"
+android:layout_marginTop="161dp"
+android:layout_marginEnd="15dp" android:ems="10"
+ android:hint="Number 2"
+ android:inputType="numberDecimal"
+ android:textSize="20sp"
+ android:textStyle="bold" />
+ <TextView
+ android:id="@+id/result"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_alignParentStart="true"
+android:layout_alignParentTop="true"
+android:layout_marginStart="28dp"
+android:layout_marginTop="225dp" android:hint="Result"
+android:textColor="@color/black" android:textSize="20sp"
+android:textStyle="bold" />
+ <Button
+ android:id="@+id/sum"
+ android:layout_width="336dp"
+android:layout_height="wrap_content"
+android:layout_alignParentStart="true"
+android:layout_alignParentTop="true"
+android:layout_centerHorizontal="true"
+android:layout_marginStart="38dp"
+android:layout_marginTop="272dp" android:onClick="Calculate"
+android:text="ADDITION" android:backgroundTint="#808080"
+app:cornerRadius="@android:dimen/app_icon_size" />
+ <Button
+ android:id="@+id/difference"
+android:layout_width="336dp"
+android:layout_height="wrap_content"
+android:layout_alignParentStart="true"
+android:layout_alignParentTop="true"
+android:layout_centerHorizontal="true"
+android:layout_marginStart="38dp"
+android:layout_marginTop="321dp"
+android:backgroundTint="#808080" android:onClick="Calculate"
+android:text="SUBTRACTION" app:cornerRadius="@android:dimen/
+app_icon_size" />
+ <Button
+ android:id="@+id/product"
+android:layout_width="336dp"
+android:layout_height="wrap_content"
+android:layout_alignParentStart="true"
+android:layout_alignParentTop="true"
+android:layout_centerHorizontal="true"
+android:layout_marginStart="40dp"
+android:layout_marginTop="370dp"
+android:backgroundTint="#808080" android:onClick="Calculate"
+android:text="MULTIPLICATION"
+app:cornerRadius="@android:dimen/app_icon_size" />
+ <Button
+ android:id="@+id/quotient"
+android:layout_width="336dp"
+android:layout_height="wrap_content"
+android:layout_alignParentStart="true"
+android:layout_alignParentTop="true"
+android:layout_centerHorizontal="true"
+android:layout_marginStart="38dp"
+android:layout_marginTop="417dp"
+android:layout_marginBottom="7dp"
+android:backgroundTint="#808080" android:onClick="Calculate"
+android:text="DIVISION" app:cornerRadius="@android:dimen/
+app_icon_size" />
+</RelativeLayout>
